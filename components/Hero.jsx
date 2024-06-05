@@ -5,6 +5,7 @@ import { MoveRight } from 'lucide-react'
 import SocialIcons from './SocialIcons'
 import Image from 'next/image'
 import Badge from './Badge'
+import { FaFigma } from 'react-icons/fa6'
 
 const Hero = () => {
   return (
@@ -34,7 +35,9 @@ const Hero = () => {
           <Image src={'/bg.png'} height={488} width={488} priority alt='' className='drop-shadow-xl'/>
         </div>
         <div className='hidden xl:flex'>
-          <Badge />
+          <Badge 
+          containerStyles={'absolute top-[60%] left-0 '} icon={<FaFigma />}
+          />
         </div>
       </div>
       </div>
