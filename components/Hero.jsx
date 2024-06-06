@@ -5,8 +5,10 @@ import { MoveRight } from 'lucide-react'
 import SocialIcons from './SocialIcons'
 import Image from 'next/image'
 import Badge from './Badge'
-import { FaFigma } from 'react-icons/fa6'
+import { FaFigma, FaReact, FaUsers } from 'react-icons/fa6'
+import { SiNextdotjs } from 'react-icons/si'
 
+SiNextdotjs
 const Hero = () => {
   return (
     <section className='max-padd-container py-20 bg-[#fdf3fb] dark:bg-transparent'>
@@ -30,14 +32,30 @@ const Hero = () => {
         </div>
         </div>
         {/*right */}
-        <div>
-          <div className=' flex flex-1 relative z-10 top-12'>
+        <div  className=' flex flex-1 relative z-10 top-12'>
+          <div>
           <Image src={'/bg.png'} height={488} width={488} priority alt='' className='drop-shadow-xl'/>
         </div>
         <div className='hidden xl:flex'>
           <Badge 
-          containerStyles={'absolute top-[60%] left-0 '} icon={<FaFigma />}
+          containerStyles={'absolute top-[60%] left-0 '} icon=
+          {<FaFigma />}/>
+          <Badge 
+          containerStyles={'absolute top-5 right-[45%] '} icon=
+          {<FaReact />}/>
+          <Badge 
+          containerStyles={'absolute bottom-[10%] right-[27%] '} icon=
+          {<SiNextdotjs />}/>
+           <Badge 
+          containerStyles={'absolute top-[10%] left-12 !h-[55px] '} icon=
+          {<FaUsers />}
+          badgeText={'Projects Completed'}
+          endCountNum={2}
+          endCountText={'k'}
           />
+          <Badge 
+          containerStyles={'absolute top-[22%] right-0 '} 
+          revie/>
         </div>
       </div>
       </div>
