@@ -5,7 +5,7 @@ import { MoveRight } from 'lucide-react'
 import SocialIcons from './SocialIcons'
 import Image from 'next/image'
 import Badge from './Badge'
-import { FaFigma, FaReact, FaUsers } from 'react-icons/fa6'
+import { FaDocker, FaFigma, FaReact, FaUsers } from 'react-icons/fa6'
 import { SiNextdotjs } from 'react-icons/si'
 
 SiNextdotjs
@@ -18,7 +18,7 @@ const Hero = () => {
         <h1 className='h1 !font-extrabold'>
           From Pixels to Perfection Exploring the Essence of Web Design
         </h1>
-        <p>Exploe my portfolio where creativy and functionality converge...</p>
+        <p>Explore my portfolio where creativy and functionality converge...</p>
         <div className='mt-6 flex gap-4'>
           <Button className='gap-x-2 shadow-xl'>
             Hire me <MoveRight size={20}/>
@@ -44,24 +44,20 @@ const Hero = () => {
           containerStyles={'absolute top-5 right-[45%] '} icon=
           {<FaReact />}/>
           <Badge 
-          containerStyles={'absolute bottom-[10%] right-[27%] '} icon=
+          containerStyles={'absolute bottom-[10%] right-[35%] '} icon=
           {<SiNextdotjs />}/>
            <Badge 
-          containerStyles={'absolute top-[10%] left-12 !h-[55px] '} icon=
-          {<FaUsers />}
-          badgeText={'Projects Completed'}
-          endCountNum={2}
-          endCountText={'k'}
+          containerStyles={'absolute top-[10%] left-0 !h-[55px]'} icon=
+          {<FaDocker />}
           />
           <Badge 
-          containerStyles={'absolute top-[22%] right-0 '} 
-          revie/>
+          containerStyles={'absolute top-[22%] right-28 '} 
+          reviewCount={666}/>
         </div>
       </div>
       </div>
       
     </section>
-
   )
 }
 
